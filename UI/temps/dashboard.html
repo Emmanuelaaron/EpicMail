@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Users dashoard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
-    <script src="main.js"></script>
+    <script src="../JS/main.js"></script>
 </head>
+
 <body>
     <div class="header">
         <a href="#" class="logo"><span id="yellowish">Epic</span><span id="blueish">Mail</span></a>
@@ -16,12 +18,29 @@
             <a href="../temps/signin.html">LogOut</a>
         </div>
     </div>
-    <div class="sidebar">
-        <a href="#" class="tablink" onclick="">Compose</a>
-        <a href="#" class="tablink" onclick="">Inbox</a>
-        <a href="#" class="tablink" onclick="">Sent</a>
-        <a href="#" class="tablink" onclick="">Drafts</a>
+    <div class="body">
+        <div class="sidebar">
+            <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
+            <a href="#" class="tablink" onclick="">Inbox</a>
+            <a href="#" class="tablink" onclick="">Sent</a>
+            <a href="#" class="tablink" onclick="">Drafts</a>
+        </div>
+        <div id="compose" class="tabcontent">
+            <form>
+                <div id="compose_message">Create New message</div>
+                <hr>
+                <div id="reciever"><input type="email" placeholder="To"></div>
+                <hr>
+                <div id="subject"><input type="text" placeholder="Subject"></div>
+                <textarea></textarea>
+                <div class="button">
+                    <button type="submit" class="send_button">Send</button>
+                    <button type="submit" class="save_button">Save Draft</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>
+
 </html>

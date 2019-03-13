@@ -1,0 +1,103 @@
+body {
+    background-image: url(../images/nasa-53888-unsplash.jpg);
+    background-size: 100%;
+    margin: 0;
+}
+
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#yellowish{
+    color: rgb(253, 253, 5);
+}
+
+#blueish {
+    color: rgb(26, 26, 248);
+}
+
+.header {
+overflow: hidden;
+background-color: rgb(83, 201, 161, 0.8);
+margin-top: -20px;
+}
+
+.header a {
+    float: left;
+    text-decoration: none;
+    font-size: 4vw;
+    padding: 12px;
+}
+
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 641px){
+    .header a {
+        float: none;
+        text-align: left;
+        display: block;
+        font-size: 6vw;
+    }
+    .header-right{
+        float: none;
+    }
+}
+
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: rgb(83, 201, 161, 0.8);
+    margin: 30px auto;
+    color: rgb(238, 238, 247);
+}
+
+input {
+    display: block;
+    width: 80%;
+    height: 30px;
+    padding: 7px;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    margin-left: 8%;
+    border: none;
+}
+
+label {
+    margin-left: 8%;
+}
+
+button {
+    width: 50%;
+    margin: auto;width: 50%;
+    margin-left: 25%;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#signup {
+    text-align: center;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(230, 21, 21);
+    color: rgb(183, 224, 224);
+}
+
+.signup_form span {
+    text-align: center;
+    margin-bottom: 20px;
+}

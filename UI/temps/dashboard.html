@@ -21,15 +21,15 @@
     <div class="body">
         <div class="sidebar">
             <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
-            <a href="#" class="tablink" onclick="">Inbox</a>
-            <a href="#" class="tablink" onclick="">Sent</a>
-            <a href="#" class="tablink" onclick="">Drafts</a>
+            <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
+            <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
+            <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
         </div>
         <div id="compose" class="tabcontent">
             <form>
                 <div id="compose_message">Create New message</div>
                 <hr>
-                <div id="reciever"><input type="email" placeholder="To"></div>
+                <div id="reciever"><input type="email" placeholder="To" required></div>
                 <hr>
                 <div id="subject"><input type="text" placeholder="Subject"></div>
                 <textarea></textarea>
@@ -39,8 +39,56 @@
                 </div>
             </form>
         </div>
+        <div id="inbox" class="tabcontent">
+            <div id="my_messages">My Inbox</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a> Coding is cool in a broader sense</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>..................................</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>...................................</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>....................................</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>....................................</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>.....................................</div>
+            <hr>
+        </div>
+        <div id="sent" class="tabcontent">
+            <div id="my_messages">Sent Messages</div>
+            <hr>
+            <div><a href="#">Schorlaships by Emmanuel</a> Coding is cool in a broader sense</div>
+            <hr>
+            <div><a href="#">I Love andela because of the following</a>..................................</div>
+            <hr>
+            <div><a href="#">The best places you should visit before you die</a>...................................</div>
+            <hr>
+            <div><a href="#">Why did you to school for all those years?</a>....................................</div>
+            <hr>
+            <div><a href="#">Flatiron schools in africa kampalaa</a>....................................</div>
+            <hr>
+            <div><a href="#">Dan at real Python</a>.....................................</div>
+        </div>
+        <div id="draft" class="tabcontent">
+            <div id="my_messages">Draft Messages</div>
+            <hr>
+            <div><a href="#">Computer programing in the broader sense</a> Coding is cool in a broader sense</div>
+            <hr>
+            <div><a href="#">My wedding day is almost due</a>..................................</div>
+            <hr>
+            <div><a href="#">Request for quotation</a>...................................</div>
+            <hr>
+            <div><a href="#">Pending orders as of 6th may 2089</a>....................................</div>
+            <hr>
+            <div><a href="#">Flatiron schools in africa kampalaa</a>....................................</div>
+            <hr>
+            <div><a href="#">A name who reigns without contention</a>.....................................</div>
+        </div>
     </div>
-
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>

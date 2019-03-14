@@ -6,3 +6,7 @@ function openPage(PageName){
     }
     document.getElementById(PageName).style.display = "block"
 }
+
+function resetPassword(){
+    alert("We've sent you an email containing password reset settings!");   
+}

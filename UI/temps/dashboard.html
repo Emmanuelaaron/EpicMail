@@ -15,6 +15,7 @@
         <a href="#" class="logo"><span id="yellowish">Epic</span><span id="blueish">Mail</span></a>
         <div class="header-right">
             <a class="active" href="#home">Home</a>
+            <a href="#">myGroups</a>
             <a href="../temps/signin.html">LogOut</a>
         </div>
     </div>
@@ -24,6 +25,7 @@
             <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
+            <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
             <form>
@@ -84,6 +86,26 @@
             <div><a href="#">Flatiron schools in africa kampalaa</a>....................................</div>
             <hr>
             <div><a href="#">A name who reigns without contention</a>.....................................</div>
+        </div>
+        <div id="create_group" class="tabcontent">
+            <form>
+                <div id="compose_message">You're creating a New Group</div>
+                <input type="text" placeholder="Name of the group">
+                <hr>
+                <input type="text" placeholder="search user..." name="search">
+                <hr>
+                <input type="checkbox"> Emmerson<br>
+                <hr>
+                <input type="checkbox"> Anderson<br>
+                <hr>
+                <input type="checkbox"> Donald<br>
+                <hr>
+                <input type="checkbox"> Martha<br>
+                <hr>
+                <div class="button">
+                    <button type="submit" class="signupbtn">Create New Group</button>
+                </div>
+            </form>
         </div>
     </div>
     <script>

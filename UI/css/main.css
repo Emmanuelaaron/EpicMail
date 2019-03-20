@@ -37,8 +37,14 @@ margin-top: -18px;
 
 .header-right {
     float: right;
-    font-size: 5px;
 }
+
+.header-right a {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
 
 @media screen and (max-width: 641px){
     .header a {

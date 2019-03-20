@@ -12,11 +12,9 @@
 
 <body>
     <div class="header">
-        <a href="#" class="logo"><span id="yellowish">Epic</span><span id="blueish">Mail</span></a>
+        <a href="#" class="logo"><span id="whitish">Epic</span><span id="blueish">Mail</span></a>
         <div class="header-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#">myGroups</a>
-            <a href="../temps/signin.html">LogOut</a>
+            <a href="../temps/signin.html">Logout</a>
         </div>
     </div>
     <div class="body">
@@ -25,6 +23,7 @@
             <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
+            <a href="#" class="tablink" onclick="">Groups</a>
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
@@ -34,65 +33,63 @@
                 <div id="reciever"><input type="email" placeholder="To" required></div>
                 <hr>
                 <div id="subject"><input type="text" placeholder="Subject"></div>
-                <textarea></textarea>
+                <textarea>Type your message here</textarea>
                 <div class="button">
-                    <button type="submit" class="send_button">Send</button>
-                    <button type="submit" class="save_button">Save Draft</button>
+                    <button type="submit" class="send_button">Save Draft</button>
+                    <button type="submit" class="save_button">Send</button>
                 </div>
             </form>
         </div>
         <div id="inbox" class="tabcontent">
             <div id="my_messages">My Inbox</div>
             <hr>
-            <div><a href="#">Dan at real Python</a> Coding is cool in a broader sense</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>..................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>...................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>.....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
         </div>
         <div id="sent" class="tabcontent">
             <div id="my_messages">Sent Messages</div>
             <hr>
-            <div><a href="#">Schorlaships by Emmanuel</a> Coding is cool in a broader sense</div>
+            <div><a href="#"onclick="openPage('email_sent')">Schorlaships by Emmanuel</a> Coding is cool in a broader sense</div>
             <hr>
-            <div><a href="#">I Love andela because of the following</a>..................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">I Love andela because of the following</a></div>
             <hr>
-            <div><a href="#">The best places you should visit before you die</a>...................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">The best places you should visit before you die</a></div>
             <hr>
-            <div><a href="#">Why did you to school for all those years?</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Why did you to school for all those years?</a></div>
             <hr>
-            <div><a href="#">Flatiron schools in africa kampalaa</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Flatiron schools in africa kampalaa</a></div>
             <hr>
-            <div><a href="#">Dan at real Python</a>.....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
         </div>
         <div id="draft" class="tabcontent">
             <div id="my_messages">Draft Messages</div>
             <hr>
-            <div><a href="#">Computer programing in the broader sense</a> Coding is cool in a broader sense</div>
+            <div><a href="#"onclick="openPage('email_sent')">Computer programing in the broader sense</a> Coding is cool in a broader sense</div>
             <hr>
-            <div><a href="#">My wedding day is almost due</a>..................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">My wedding day is almost due</a></div>
             <hr>
-            <div><a href="#">Request for quotation</a>...................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Request for quotation</a></div>
             <hr>
-            <div><a href="#">Pending orders as of 6th may 2089</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Pending orders as of 6th may 2089</a></div>
             <hr>
-            <div><a href="#">Flatiron schools in africa kampalaa</a>....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">Flatiron schools in africa kampalaa</a></div>
             <hr>
-            <div><a href="#">A name who reigns without contention</a>.....................................</div>
+            <div><a href="#"onclick="openPage('email_sent')">A name who reigns without contention</a></div>
         </div>
         <div id="create_group" class="tabcontent">
             <form>
                 <div id="compose_message">You're creating a New Group</div>
                 <input type="text" placeholder="Name of the group">
-                <hr>
-                <input type="text" placeholder="search user..." name="search">
                 <hr>
                 <input type="checkbox"> Emmerson<br>
                 <hr>
@@ -106,6 +103,17 @@
                     <button type="submit" class="signupbtn">Create New Group</button>
                 </div>
             </form>
+        </div>
+        <div id="email_sent" class="tabcontent">
+            <h3>Python is cool</h3>
+            <p>The reason you should learn Python is because it's very cool. <br>
+                I encourange everyone to learn it</p>
+            <textarea name="" id="" cols="20" rows="5">Type your reply here</textarea>
+            <div class="button">
+                <button type="submit" class="send_button">Reply</button>
+                <button type="submit" class="save_button">Delete</button>
+
+            </div>
         </div>
     </div>
     <script>

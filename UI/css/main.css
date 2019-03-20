@@ -1,7 +1,9 @@
 body {
-    background-image: url(../images/nasa-53888-unsplash.jpg);
+    background-image: url(../images/shannon-s-78149-unsplash.jpg);
     background-size: 100%;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(228, 227, 227);
 }
 
 .logo{
@@ -11,8 +13,8 @@ body {
     border-radius: 20px;
 }
 
-#yellowish{
-    color: rgb(253, 253, 5);
+#whitish{
+    color: white
 }
 
 #blueish {
@@ -30,16 +32,19 @@ margin-top: -18px;
     text-decoration: none;
     font-size: 4vw;
     padding: 12px;
-}
-
-.header a.active {
-    background-color: dodgerblue;
-    color: white;
+    color: rgb(26, 26, 248);
 }
 
 .header-right {
     float: right;
 }
+
+.header-right a {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+
 
 @media screen and (max-width: 641px){
     .header a {
@@ -47,6 +52,7 @@ margin-top: -18px;
         text-align: left;
         display: block;
         font-size: 6vw;
+        text-align: center;
     }
     .header-right{
         float: none;
@@ -60,20 +66,21 @@ margin-top: -18px;
     background-color: rgb(83, 201, 161, 0.8);
     margin: 30px auto;
     color: rgb(238, 238, 247);
+    border-radius: 20px;
 }
 
 input {
     display: block; 
-    width: 80%;
+    width: 60%;
     height: 30px;
     padding: 7px;  
     margin-top: 9px;
     margin-bottom: 4px;
-    margin-left: 8%;
+    margin-left: 20%;
     border: none;
 }
 
-.tabcontent form input[type="checkbox"] {
+.tabcontent form input[type="checkbox"]{
     display: inline-block;
     width: 20px;
 }
@@ -83,13 +90,12 @@ input {
 } */
 
 label {
-    margin-left: 8%;
+    margin-left: 20%;
 }
 
 form button {
-    width: 50%;
-    margin: auto;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: 30%;
     height: 40px;
     border: none;
     margin-top: 10px;
@@ -99,6 +105,7 @@ form button {
 #signup, #login, #compose_message, #my_messages, #reset{
     text-align: center;
     font-size: 30px;
+    margin-top: 20px;
 }
 
 form button:hover{
@@ -129,7 +136,6 @@ form button:hover{
     display: block;
     font-size: 25px;
     padding: 6px 8px 6px 16px;
-    background-color: rgb(54, 145, 236, 0.4);
     margin-top: 10px;
     color: white;
 }
@@ -139,16 +145,31 @@ form button:hover{
     margin-left: 16.1%;
     font-size: 28px;
     width: 80%;
-    background-color: rgb(54, 145, 236, 0.4);
+    background-color: rgb(83, 201, 161, 0.8);
     color: white;
     display: none;
     padding-top: 20px;
 }
 
+.tabcontent input {
+    width: 80%;
+    margin-left: 8.2%
+}
 textarea {
     width: 80.9%;
     height: 20vw;
     margin-left: 8%;
+}
+
+#email_sent textarea {
+    height: 90px;
+}
+
+h3 {
+    text-align: center
+}
+p {
+    margin-left: 9%;
 }
 
 .send_button, .save_button {
@@ -174,4 +195,16 @@ textarea {
     margin-top: 200px;
     padding-top: 20px;
     padding-bottom: 50px;
+}
+
+::placeholder{
+    color: rgb(240, 239, 239);
+}
+
+button {
+    color: rgb(26, 26, 248);
+}
+
+span a {
+    color: rgb(26, 26, 248);
 }

@@ -208,3 +208,16 @@ button {
 span a {
     color: rgb(26, 26, 248);
 }
+
+fieldset {
+    border-color: white;
+}
+
+#real_groups textarea {
+    height: 50px;
+    border-radius: 20px;
+}
+
+#real_groups .button button {
+    border-radius: 20px;
+}

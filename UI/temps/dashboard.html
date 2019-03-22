@@ -23,7 +23,7 @@
             <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
-            <a href="#" class="tablink" onclick="">Groups</a>
+            <a href="#" class="tablink" onclick="openPage('groups')">Groups</a>
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
@@ -112,7 +112,31 @@
             <div class="button">
                 <button type="submit" class="send_button">Reply</button>
                 <button type="submit" class="save_button">Delete</button>
-
+            </div>
+        </div>
+        <div id="groups" class="tabcontent">
+            <fieldset>
+                <legend>
+                    <h3>My Groups</h3>
+                </legend>
+                <ul>
+                    <a href="#"onclick="openPage('real_groups')">
+                        <li>Epics</li>
+                    </a>
+                    <a href="#">
+                        <li>Great people</li>
+                    </a>
+                    <a href="#">
+                        <li>Worship Academy</li>
+                    </a>
+                </ul>
+            </fieldset>
+        </div>
+        <div id="real_groups" class="tabcontent">
+            <h3>Epics</h3>
+            <textarea name="" id="" cols="20" rows="5">Type your message here</textarea>
+            <div class="button">
+                <button type="submit" class="send_button">send</button>
             </div>
         </div>
     </div>

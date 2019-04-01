@@ -222,7 +222,15 @@ fieldset {
     border-radius: 20px;
 }
 
-#validator, #validater {
+#validator, #validater, #invalidUser{
     color: rgb(192, 37, 37);
     text-align: center;
+}
+
+#messageSent {
+    color: rgb(118, 183, 240);
+    text-align: center;
+    background-color: rgb(232, 241, 248, 0.7);
+    width: 30%;
+    margin: auto;
 }

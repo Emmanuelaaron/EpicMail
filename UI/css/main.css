@@ -222,7 +222,7 @@ fieldset {
     border-radius: 20px;
 }
 
-#validator {
+#validator, #validater {
     color: rgb(192, 37, 37);
     text-align: center;
 }

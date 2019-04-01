@@ -221,3 +221,8 @@ fieldset {
 #real_groups .button button {
     border-radius: 20px;
 }
+
+#validator {
+    color: rgb(192, 37, 37);
+    text-align: center;
+}

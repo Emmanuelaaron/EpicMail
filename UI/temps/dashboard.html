@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <script src="../JS/main.js"></script>
+    <script src="../JS/sendEmail.js"></script>
 </head>
 
 <body>
@@ -27,16 +28,18 @@
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
-            <form>
+            <form method="POST", id="sendEmail">
                 <div id="compose_message">Create New message</div>
                 <hr>
-                <div id="reciever"><input type="email" placeholder="To" required></div>
+                <div id="invalidUser"></div>
+                <div id="messageSent"></div>
+                <input type="email" placeholder="To" required id="receiver">
                 <hr>
-                <div id="subject"><input type="text" placeholder="Subject"></div>
-                <textarea>Type your message here</textarea>
+                <input type="text" placeholder="Subject" id="subject">
+                <textarea id="messageBody"></textarea>
                 <div class="button">
                     <button type="submit" class="send_button">Save Draft</button>
-                    <button type="submit" class="save_button">Send</button>
+                    <button type="submit" class="save_button" onclick="sendEmail(event)">Send</button>
                 </div>
             </form>
         </div>

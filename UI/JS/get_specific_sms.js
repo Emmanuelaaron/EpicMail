@@ -27,7 +27,7 @@ const getSpecificMessage =(message_id) =>{
                 Sent by: ${message.data.sender_email}
             </div>
             <div class="button">
-                <button type="submit" class="save_button">Delete</button>
+                <button type="submit" class="save_button"onclick="deleteSpecificMessage(${message.data.message_id})">Delete</button>
             </div>
             </div>
             `

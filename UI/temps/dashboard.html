@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <script src="../JS/main.js"></script>
     <script src="../JS/sendEmail.js"></script>
+    <script src="../JS/inbox.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <div class="body">
         <div class="sidebar">
             <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
-            <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
+            <a href="#" class="tablink" onclick="inbox()"id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
             <a href="#" class="tablink" onclick="openPage('groups')">Groups</a>
@@ -58,6 +59,12 @@
             <hr>
             <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
+        </div>
+        <div id="inboxmesso" class="inbox"></div>
+        <div id="no_messages" class="tabcontent">
+            <div id="my_messages">My Inbox</div>
+            <hr>
+            <p>Sorry You Do Not Have Any Messages</p>
         </div>
         <div id="sent" class="tabcontent">
             <div id="my_messages">Sent Messages</div>

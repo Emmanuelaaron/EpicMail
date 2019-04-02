@@ -34,7 +34,7 @@ const inbox = () => {
                 message["data"].forEach((mess) =>{
                     outPutData +=
                     `<div>
-                        <h5> ${mess.subject}</h5>
+                        <a href="#"onclick="getSpecificMessage(${mess.message_id})"> ${mess.subject}</a>
                         <hr>
                     </div>
                     `

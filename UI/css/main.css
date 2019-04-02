@@ -189,7 +189,8 @@ p {
 }
 
 .save_button{
-    margin-left: 40.9%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .tabcontent a{
@@ -252,4 +253,17 @@ fieldset {
     display: none;
     padding-top: 20px;
     text-align: center;
+}
+
+#inboxmesso a{
+    text-decoration: none;
+    color: white;
+}
+
+#inboxmesso p {
+    text-align: center;
+}
+
+#inboxmesso #sender_email{
+    font-size: 10px;
 }

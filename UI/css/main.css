@@ -172,6 +172,13 @@ p {
     margin-left: 9%;
 }
 
+#no_messages p {
+    margin-left: 25%;
+    padding-bottom: 30px;
+}
+
+
+
 .send_button, .save_button {
     width: 20%;
     margin: auto;
@@ -182,7 +189,8 @@ p {
 }
 
 .save_button{
-    margin-left: 40.9%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 .tabcontent a{
@@ -233,4 +241,29 @@ fieldset {
     background-color: rgb(232, 241, 248, 0.7);
     width: 30%;
     margin: auto;
+}
+
+.inbox, .sent_messo{
+    margin-top: 10px;
+    margin-left: 16.1%;
+    font-size: 28px;
+    width: 80%;
+    background-color: rgb(83, 201, 161, 0.8);
+    color: white;
+    display: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#inboxmesso a, #sent_messos a {
+    text-decoration: none;
+    color: white;
+}
+
+#inboxmesso p {
+    text-align: center;
+}
+
+#inboxmesso #sender_email, #sent_messos #receiver_email{
+    font-size: 10px;
 }

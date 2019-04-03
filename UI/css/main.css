@@ -265,5 +265,22 @@ fieldset {
 }
 
 #inboxmesso #sender_email, #sent_messos #receiver_email{
-    font-size: 10px;
+    font-size: 15px;
+}
+
+#button_del button{
+    width: 50px;
+    height: 15px;
+    background-color: rgb(139, 236, 236, 0.4);
+}
+
+#sent_messos #messo, #inboxmesso #messo {
+    background-color: rgb(107, 207, 207, 0.4);
+    width: 60%;
+    margin: auto;
+}
+
+#button_del button:hover {
+    background-color: red;
+    color: aliceblue;
 }

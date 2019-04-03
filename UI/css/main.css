@@ -243,7 +243,7 @@ fieldset {
     margin: auto;
 }
 
-.inbox {
+.inbox, .sent_messo{
     margin-top: 10px;
     margin-left: 16.1%;
     font-size: 28px;
@@ -255,7 +255,7 @@ fieldset {
     text-align: center;
 }
 
-#inboxmesso a{
+#inboxmesso a, #sent_messos a {
     text-decoration: none;
     color: white;
 }
@@ -264,6 +264,6 @@ fieldset {
     text-align: center;
 }
 
-#inboxmesso #sender_email{
+#inboxmesso #sender_email, #sent_messos #receiver_email{
     font-size: 10px;
 }

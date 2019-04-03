@@ -25,6 +25,7 @@ const inbox = () => {
                 outPutData = `<h2>My Messages</h2><hr>`
                 document.getElementById("inboxmesso").innerHTML = outPutData
                 document.getElementById("inboxmesso").style.display = 'block'
+                document.getElementById("sent_messos").style.display = 'none'
                 var i, tabcontent
                 tabcontent = document.getElementsByClassName("tabcontent")
                 for (i = 0; i < tabcontent.length; i++) {
@@ -45,3 +46,4 @@ const inbox = () => {
         })
 
 }
+

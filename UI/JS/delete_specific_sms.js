@@ -1,6 +1,6 @@
 let userr_token = localStorage.getItem("token")
 const deleteSpecificMessage =(message_id) => {
-    url = 'http://127.0.0.1:5000/api/v2/messages/'
+    url = 'https://epicmail.herokuapp.com/api/v2/messages/'
     fetch(url + message_id,{
         method: 'DELETE',
         headers: {

@@ -1,6 +1,6 @@
 let userrr_token = localStorage.getItem("token")
 const getSentMessages = () => {
-    fetch('http://127.0.0.1:5000/api/v2/messages/sent', {
+    fetch('https://epicmail.herokuapp.com/api/v2/messages/sent', {
         method: 'GET',
         headers: {
             'Content-type': 'application/json',

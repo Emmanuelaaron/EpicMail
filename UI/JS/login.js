@@ -5,7 +5,7 @@ const signIn = (e) => {
         "email": document.getElementById("email").value,
         "password": document.getElementById("password").value
     }
-    fetch('http://127.0.0.1:5000/api/v2/auth/login', {
+    fetch('https://epicmail.herokuapp.com/api/v2/auth/login', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8'

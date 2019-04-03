@@ -6,7 +6,7 @@ const sendEmail = (e) => {
         "message": document.getElementById("messageBody").value,
         "receiver_email": document.getElementById("receiver").value
     }
-    fetch('http://127.0.0.1:5000/api/v2/messages', {
+    fetch('https://epicmail.herokuapp.com/api/v2/messages', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
@@ -20,7 +20,7 @@ const sendEmail = (e) => {
             document.getElementById("invalidUser").innerHTML = "Oops ... You can't send a message to your self"
         }
         if (message["message"] === "Oops... Reciever does not exist on this app"){
-            document.getElementById("invalidUser").innerHTML = "User with this Id does not exist"
+            document.getElementById("invalidUser").innerHTML = "User with this email does not exist"
         }
         if (message["missing"] === "All fields must be filled"){
             document.getElementById("invalidUser").innerHTML = "Empty fields somewhere! Check your fields well"

@@ -4,7 +4,7 @@ const sendEmail = (e) => {
     let postData = {
         "subject": document.getElementById("subject").value,
         "message": document.getElementById("messageBody").value,
-        "receiver_id": document.getElementById("receiver").value
+        "receiver_email": document.getElementById("receiver").value
     }
     fetch('http://127.0.0.1:5000/api/v2/messages', {
         method: 'POST',

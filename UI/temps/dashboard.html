@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
     <script src="../JS/main.js"></script>
+    <script src="../JS/delete_specific_sms.js"></script>
+    <script src="../JS/sendEmail.js"></script>
+    <script src="../JS/sent.js"></script>
+    <script src="../JS/get_specific_sms.js"></script>
+    <script src="../JS/inbox.js"></script>
+    <script src="../JS/create_grp.js"></script>
 </head>
 
 <body>
@@ -20,23 +26,25 @@
     <div class="body">
         <div class="sidebar">
             <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
-            <a href="#" class="tablink" onclick="openPage('inbox')" id="defaultOpen">Inbox</a>
-            <a href="#" class="tablink" onclick="openPage('sent')">Sent</a>
+            <a href="#" class="tablink" onclick="inbox()"id="defaultOpen">Inbox</a>
+            <a href="#" class="tablink" onclick="getSentMessages()">Sent</a>
             <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
             <a href="#" class="tablink" onclick="openPage('groups')">Groups</a>
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
-            <form>
+            <form method="POST", id="sendEmail">
                 <div id="compose_message">Create New message</div>
                 <hr>
-                <div id="reciever"><input type="email" placeholder="To" required></div>
+                <div id="invalidUser"></div>
+                <div id="messageSent"></div>
+                <input type="email" placeholder="To" required id="receiver">
                 <hr>
-                <div id="subject"><input type="text" placeholder="Subject"></div>
-                <textarea>Type your message here</textarea>
+                <input type="text" placeholder="Subject" id="subject">
+                <textarea id="messageBody"></textarea>
                 <div class="button">
                     <button type="submit" class="send_button">Save Draft</button>
-                    <button type="submit" class="save_button">Send</button>
+                    <button type="submit" class="save_button" onclick="sendEmail(event)">Send</button>
                 </div>
             </form>
         </div>
@@ -55,6 +63,18 @@
             <hr>
             <div><a href="#"onclick="openPage('email_sent')">Dan at real Python</a></div>
             <hr>
+        </div>
+        <div id="inboxmesso" class="inbox"></div>
+        <div id="no_messages" class="tabcontent">
+            <div id="my_messages">My Inbox</div>
+            <hr>
+            <p>Sorry You Do Not Have Any Messages</p>
+        </div>
+        <div id="sent_messos" class="sent_messo"></div>
+        <div id="no_sent" class="tabcontent">
+            <div id="my_messages">Sent Box</div>
+            <hr>
+            <p>Sorry You Do Not Have Any Sent Messages</p>
         </div>
         <div id="sent" class="tabcontent">
             <div id="my_messages">Sent Messages</div>
@@ -87,20 +107,15 @@
             <div><a href="#"onclick="openPage('email_sent')">A name who reigns without contention</a></div>
         </div>
         <div id="create_group" class="tabcontent">
-            <form>
+            <form id="create">
+                
                 <div id="compose_message">You're creating a New Group</div>
-                <input type="text" placeholder="Name of the group">
-                <hr>
-                <input type="checkbox"> Emmerson<br>
-                <hr>
-                <input type="checkbox"> Anderson<br>
-                <hr>
-                <input type="checkbox"> Donald<br>
-                <hr>
-                <input type="checkbox"> Martha<br>
-                <hr>
+                <div id="no_group"></div>
+                <div id="yes_group"></div>
+                <input type="text" placeholder="Name of the group" required id="group_name">
+                
                 <div class="button">
-                    <button type="submit" class="signupbtn">Create New Group</button>
+                    <button type="submit" class="signupbtn" onclick="createGroup(event)">Create New Group</button>
                 </div>
             </form>
         </div>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sign In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
-    <script src="main.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/login.js"></script>
 </head>
+
 <body>
     <div class="header">
         <a href="#" class="logo"><span id="whitish">Epic</span><span id="blueish">Mail</span></a>
@@ -16,25 +19,27 @@
         </div>
     </div>
     <div class="login-form">
-            <div id="login">Login here</div>
-        
-            <form action="../temps/dashboard.html">
-                <div class="email">
-                    <label for="email"><b>Email</b></label>
-                    <input type="email" placeholder="joe@go.ug" name="email" required>
-                </div>
-                <div class="password">
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="secret" required>
-                </div>
-                <div class="button">
-                    <button type="submit" class="signupbtn">Login</button>
-                </div>        
-            </form>
-            <span>Forgot the password? Click <a href="../temps/reset.html">here</a></span>
-            <span>Don't have an account? click <a href="../temps/signup.html">here</a></span>
-        </div>
-    
+        <div id="login">Login here</div>
+
+        <form method="POST" , id="login-form">
+            <div class="email">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="joe@go.ug" name="email" id="email" required>
+            </div>
+            <div class="password">
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="secret" name="password" id="password" required>
+            </div>
+            <div id="validator"></div>
+            <div class="button">
+                <button type="submit" class="signupbtn" onclick="signIn(event)">Login</button>
+            </div>
+        </form>
+        <span>Forgot the password? Click <a href="../temps/reset.html">here</a></span>
+        <span>Don't have an account? click <a href="../temps/signup.html">here</a></span>
+    </div>
+
 
 </body>
+
 </html>

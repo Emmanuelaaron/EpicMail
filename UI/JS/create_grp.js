@@ -4,7 +4,7 @@ const createGroup =(e)=>{
     let postData = {
         "group_name": document.getElementById("group_name").value
     }
-    fetch('https://epicmail.herokuapp.com/api/v2/api/v2/groups',{
+    fetch('https://epicmail.herokuapp.com/api/v2/groups',{
         method: 'POST',
         headers: {
             'Content_type': 'application/json',

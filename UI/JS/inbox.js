@@ -16,6 +16,7 @@ const inbox = () => {
                     tabcontent[tab].style.display = "none"
                 }
                 document.getElementById("no_messages").style.display = 'block'
+                document.getElementById("sent_messos").style.display = "none"
             }
             if (message["message"] == "invalid token!") {
                 document.getElementById("messageSent").innerHTML = "Please login again"

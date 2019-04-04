@@ -103,8 +103,8 @@ form button {
 }
 
 form button:hover{
-    background-color: rgb(230, 21, 21);
-    color: rgb(183, 224, 224);
+    background-color: green;
+    color: white;
 }
 
 .signup_form span, .login-form span{
@@ -398,8 +398,8 @@ p {
 
     #inboxmesso {
         width: 500px;
-        margin-left: 260px;
-        font-size: 3vw;
+        margin-left: 240px;
+        font-size: 7vw;
     }
     #inboxmesso h2 {
         font-size: 30px;

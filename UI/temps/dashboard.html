@@ -13,6 +13,7 @@
     <script src="../JS/sent.js"></script>
     <script src="../JS/get_specific_sms.js"></script>
     <script src="../JS/inbox.js"></script>
+    <script src="../JS/display_name.js"></script>
     <script src="../JS/create_grp.js"></script>
 </head>
 
@@ -22,13 +23,15 @@
         <div class="header-right">
             <a href="../temps/signin.html">Logout</a>
         </div>
+        <div id="display_name"></div>
     </div>
     <div class="body">
         <div class="sidebar">
+            
             <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
             <a href="#" class="tablink" onclick="inbox()"id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="getSentMessages()">Sent</a>
-            <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a>
+            <!-- <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a> -->
             <a href="#" class="tablink" onclick="openPage('groups')">Groups</a>
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>

@@ -25,6 +25,9 @@ const signIn = (e) => {
             window.location.replace("../temps/dashboard.html")
             let token = message["token"]
             localStorage.setItem("token", token)
+            localStorage.setItem("user", postData.email)
+            
+            
             
         }
     })

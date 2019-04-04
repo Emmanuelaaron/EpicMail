@@ -30,7 +30,7 @@ margin-top: -18px;
 .header a {
     float: left;
     text-decoration: none;
-    font-size: 4vw;
+    /* font-size: 4vw; */
     padding: 12px;
     color: rgb(26, 26, 248);
 }
@@ -46,18 +46,12 @@ margin-top: -18px;
 
 
 
-@media screen and (max-width: 641px){
-    .header a {
-        float: none;
-        text-align: left;
-        display: block;
-        font-size: 6vw;
-        text-align: center;
-    }
-    .header-right{
-        float: none;
-    }
-}
+ @media screen and (max-width: 1366px){
+   .logo{
+       margin-top: 10px;
+       font-size: 40px;
+   }
+} 
 
 .signup_form, .login-form, .reset_form {
     display: flex;
@@ -129,6 +123,7 @@ form button:hover{
     position: fixed;
     left: 0;
     padding-top: 20px;
+    /* display: none; */
 }
 
 .sidebar a {
@@ -139,6 +134,183 @@ form button:hover{
     margin-top: 10px;
     color: white;
 }
+
+@media only screen and (width: 425px){
+    .sidebar {
+        width: 100px;
+    }
+    .sidebar a{
+        font-size: 4vw;
+    }
+    #no_messages, #no_sent{
+        display: none;
+        width: 60%;
+        margin-left: 130px;
+        font-size: 5vw;
+    }
+    form #compose_message{
+        font-size: 5vw;
+    }
+    #create_group {
+        width: 60%;
+        margin-left: 120px;
+    }
+    #create_group button{
+        overflow: hidden;
+        height: 17px;
+        border-radius: 4px;
+    }
+    #create_group input {
+        height: 15px;
+    }
+    #compose{
+        width: 250px;
+        margin-left: 110px;
+    }
+    #compose input {
+        height: 20px;
+    }
+    #compose textarea {
+        width: 210px;
+    }
+    #compose .button {
+        display:flex;
+        justify-content: center;
+
+    }
+
+    #compose .button .save_button {
+        margin-right: 9px;
+    }
+
+    #inboxmesso {
+        width: 300px;
+        margin-left: 110px;
+        font-size: 5vw;
+    }
+    #inboxmesso h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (width: 375px){
+    .sidebar {
+        width: 100px;
+    }
+    .sidebar a{
+        font-size: 4vw;
+    }
+    #no_messages, #no_sent{
+        display: none;
+        width: 60%;
+        margin-left: 130px;
+        font-size: 5vw;
+    }
+    form #compose_message{
+        font-size: 5vw;
+    }
+    #create_group {
+        width: 60%;
+        margin-left: 110px;
+    }
+    #create_group button{
+        overflow: hidden;
+        height: 17px;
+        border-radius: 4px;
+    }
+    #create_group input {
+        height: 15px;
+    }
+    #compose{
+        width: 250px;
+        margin-left: 110px;
+    }
+    #compose input {
+        height: 20px;
+    }
+    #compose textarea {
+        width: 210px;
+    }
+    #compose .button {
+        display:flex;
+        justify-content: center;
+
+    }
+
+    #compose .button .save_button {
+        margin-right: 9px;
+    }
+
+    #inboxmesso {
+        width: 250px;
+        margin-left: 110px;
+        font-size: 7vw;
+    }
+    #inboxmesso h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (width: 320px){
+    .sidebar {
+        width: 100px;
+    }
+    .sidebar a{
+        font-size: 4vw;
+    }
+    #no_messages, #no_sent{
+        display: none;
+        width: 60%;
+        margin-left: 110px;
+        font-size: 5vw;
+
+    }
+    form #compose_message{
+        font-size: 5vw;
+    }
+    #create_group {
+        width: 60%;
+        margin-left: 110px;
+    }
+    #create_group button{
+        overflow: hidden;
+        height: 17px;
+        border-radius: 4px;
+    }
+    #create_group input {
+        height: 15px;
+    }
+    #compose{
+        width: 200px;
+        margin-left: 110px;
+    }
+    #compose input {
+        height: 20px;
+    }
+    #compose textarea {
+        width: 169px;
+    }
+    #compose .button {
+        display:flex;
+        justify-content: center;
+
+    }
+
+    #compose .button .save_button {
+        margin-right: 9px;
+    }
+
+    #inboxmesso {
+        width: 200px;
+        margin-left: 110px;
+        font-size: 7vw;
+    }
+    #inboxmesso h2 {
+        font-size: 30px;
+    }
+}
+
 
 .tabcontent {
     margin-top: 10px;
@@ -176,6 +348,65 @@ p {
     margin-left: 25%;
     padding-bottom: 30px;
 }
+@media only screen and (width: 768px){
+    .sidebar {
+        width: 250px;
+    }
+    .sidebar a{
+        font-size: 4vw;
+    }
+    #no_messages, #no_sent{
+        display: none;
+        width: 60%;
+        margin-left: 280px;
+        font-size: 5vw;
+    }
+    form #compose_message{
+        font-size: 5vw;
+    }
+    #create_group {
+        width: 60%;
+        margin-left: 280px;
+    }
+    #create_group button{
+        overflow: hidden;
+        height: 27px;
+        border-radius: 4px;
+    }
+    #create_group input {
+        height: 30px;
+    }
+    #compose{
+        width: 450px;
+        margin-left: 280px;
+    }
+    #compose input {
+        height: 20px;
+    }
+    #compose textarea {
+        width: 373px;
+    }
+    #compose .button {
+        display:flex;
+        justify-content: center;
+
+    }
+
+    #compose .button .save_button {
+        margin-right: 33px;
+    }
+
+    #inboxmesso {
+        width: 500px;
+        margin-left: 260px;
+        font-size: 3vw;
+    }
+    #inboxmesso h2 {
+        font-size: 30px;
+    }
+
+}
+
 
 
 
@@ -230,9 +461,18 @@ fieldset {
     border-radius: 20px;
 }
 
-#validator, #validater, #invalidUser{
+#validator, #validater, #invalidUser, #no_group{
     color: rgb(192, 37, 37);
     text-align: center;
+}
+
+#no_group {
+    font-size: 15px;
+}
+#yes_group {
+    color: green;
+    text-align: center;
+    font-size: 15px;
 }
 
 #messageSent {
@@ -284,3 +524,4 @@ fieldset {
     background-color: red;
     color: aliceblue;
 }
+

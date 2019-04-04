@@ -13,6 +13,7 @@
     <script src="../JS/sent.js"></script>
     <script src="../JS/get_specific_sms.js"></script>
     <script src="../JS/inbox.js"></script>
+    <script src="../JS/create_grp.js"></script>
 </head>
 
 <body>
@@ -106,20 +107,15 @@
             <div><a href="#"onclick="openPage('email_sent')">A name who reigns without contention</a></div>
         </div>
         <div id="create_group" class="tabcontent">
-            <form>
+            <form id="create">
+                
                 <div id="compose_message">You're creating a New Group</div>
-                <input type="text" placeholder="Name of the group">
-                <hr>
-                <input type="checkbox"> Emmerson<br>
-                <hr>
-                <input type="checkbox"> Anderson<br>
-                <hr>
-                <input type="checkbox"> Donald<br>
-                <hr>
-                <input type="checkbox"> Martha<br>
-                <hr>
+                <div id="no_group"></div>
+                <div id="yes_group"></div>
+                <input type="text" placeholder="Name of the group" required id="group_name">
+                
                 <div class="button">
-                    <button type="submit" class="signupbtn">Create New Group</button>
+                    <button type="submit" class="signupbtn" onclick="createGroup(event)">Create New Group</button>
                 </div>
             </form>
         </div>

@@ -28,6 +28,9 @@ const getSentMessages = () => {
                 document.getElementById("sent_messos").style.display = 'block'
                 document.getElementById("no_messages").style.display = 'none'
                 document.getElementById("inboxmesso").style.display = 'none'
+                document.getElementById("sendEmail").style.display = 'none'
+                document.getElementById("create_group").style.display = 'none'
+                document.getElementById("my_groupz").style.display = "none"
                 console.log(message["data"])
                 message["data"].forEach((mess) =>{
                     outPutData +=

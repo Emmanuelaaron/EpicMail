@@ -123,6 +123,7 @@ form button:hover{
     position: fixed;
     left: 0;
     padding-top: 20px;
+    overflow: hidden;
     /* display: none; */
 }
 
@@ -521,7 +522,26 @@ fieldset {
 }
 
 #button_del button:hover {
-    background-color: red;
-    color: aliceblue;
+    background-color: green;
+    color: white;
+}
+
+#display_name {
+    color: green;
+}
+
+#my_groupz {
+    width: 50%;
+    margin-left: 300px;
+    background-color:rgb(107, 207, 169, 0.75);
+    color: white;
+    text-align: center
+
+}
+
+#my_groupz a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 

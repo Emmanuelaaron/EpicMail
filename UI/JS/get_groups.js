@@ -19,6 +19,8 @@ const myGroups =()=>{
             document.getElementById("my_groupz").innerHTML = outPutData
             document.getElementById("no_messages").style.display = 'none'
             document.getElementById("sent_messos").style.display = 'none'
+            document.getElementById("inboxmesso").style.display = 'none'
+            document.getElementById("no_sent").style.display = 'none'
             message.message.forEach((grp) =>{
                 outPutData +=
                 ` ${grp}

@@ -1,4 +1,5 @@
 let user_token = localStorage.getItem("token")
+console.log("login_token", user_token)
 const inbox = () => {
     fetch('https://epicmail.herokuapp.com/api/v2/messages', {
         method: 'GET',
@@ -17,6 +18,7 @@ const inbox = () => {
                 }
                 document.getElementById("no_messages").style.display = 'block'
                 document.getElementById("sent_messos").style.display = "none"
+                // document.getElementById("my_groupz").style.display = "none"
             }
             if (message["message"] == "invalid token!") {
                 document.getElementById("messageSent").innerHTML = "Please login again"
@@ -24,6 +26,7 @@ const inbox = () => {
             }
             if (message["data"]) {
                 outPutData = `<h2>My Messages</h2><hr>`
+               
                 document.getElementById("inboxmesso").innerHTML = outPutData
                 document.getElementById("inboxmesso").style.display = 'block'
                 document.getElementById("sent_messos").style.display = 'none'

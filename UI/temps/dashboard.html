@@ -12,9 +12,10 @@
     <script src="../JS/sendEmail.js"></script>
     <script src="../JS/sent.js"></script>
     <script src="../JS/get_specific_sms.js"></script>
-    <script src="../JS/inbox.js"></script>
-    <script src="../JS/display_name.js"></script>
+    <script src="../JS/get_groups.js"></script>
     <script src="../JS/create_grp.js"></script>
+    <script src="../JS/inbox.js"></script>
+    
 </head>
 
 <body>
@@ -23,16 +24,16 @@
         <div class="header-right">
             <a href="../temps/signin.html">Logout</a>
         </div>
-        <div id="display_name"></div>
     </div>
     <div class="body">
         <div class="sidebar">
-            
+            <p id="display_name"></p>
             <a href="#" class="tablink" onclick="openPage('compose')">Compose</a>
             <a href="#" class="tablink" onclick="inbox()"id="defaultOpen">Inbox</a>
             <a href="#" class="tablink" onclick="getSentMessages()">Sent</a>
             <!-- <a href="#" class="tablink" onclick="openPage('draft')">Drafts</a> -->
-            <a href="#" class="tablink" onclick="openPage('groups')">Groups</a>
+            <a href="#" class="tablink" onclick="myGroups()">Groups</a>
+            <p id="no_groups"></p>
             <a href="#" class="tablink" onclick="openPage('create_group')">Create Group</a>
         </div>
         <div id="compose" class="tabcontent">
@@ -150,6 +151,7 @@
                 </ul>
             </fieldset>
         </div>
+        <div id="my_groupz" class="tabcontent"></div>        
         <div id="real_groups" class="tabcontent">
             <h3>Epics</h3>
             <textarea name="" id="" cols="20" rows="5">Type your message here</textarea>
@@ -162,5 +164,5 @@
         document.getElementById("defaultOpen").click();
     </script>
 </body>
-
+<script src="../JS/display_name.js"></script>
 </html>

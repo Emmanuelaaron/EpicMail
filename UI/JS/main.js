@@ -4,9 +4,12 @@ function openPage(PageName){
     for (i = 0; i < tabcontent.length; i++){
         tabcontent[i].style.display = "none"
         document.getElementById("inboxmesso").style.display = 'none'
+        document.getElementById("sent_messos").style.display = 'none'
 
     }
     document.getElementById(PageName).style.display = "block"
+    
+
 }
 
 function resetPassword(){

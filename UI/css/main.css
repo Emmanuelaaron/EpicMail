@@ -103,8 +103,8 @@ form button {
 }
 
 form button:hover{
-    background-color: rgb(230, 21, 21);
-    color: rgb(183, 224, 224);
+    background-color: green;
+    color: white;
 }
 
 .signup_form span, .login-form span{
@@ -123,6 +123,7 @@ form button:hover{
     position: fixed;
     left: 0;
     padding-top: 20px;
+    overflow: hidden;
     /* display: none; */
 }
 
@@ -398,8 +399,8 @@ p {
 
     #inboxmesso {
         width: 500px;
-        margin-left: 260px;
-        font-size: 3vw;
+        margin-left: 240px;
+        font-size: 7vw;
     }
     #inboxmesso h2 {
         font-size: 30px;
@@ -521,7 +522,26 @@ fieldset {
 }
 
 #button_del button:hover {
-    background-color: red;
-    color: aliceblue;
+    background-color: green;
+    color: white;
+}
+
+#display_name {
+    color: green;
+}
+
+#my_groupz {
+    width: 50%;
+    margin-left: 300px;
+    background-color:rgb(107, 207, 169, 0.75);
+    color: white;
+    text-align: center
+
+}
+
+#my_groupz a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 

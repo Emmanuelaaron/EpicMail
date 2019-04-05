@@ -13,7 +13,6 @@ const signIn = (e) => {
         body: JSON.stringify(postData)
     })
     .then((response) => response.json())
-    // alert("dsghd")
     .then(function(message){
         if (message["missing"] === "All fields must be filled"){
             document.getElementById("validator").innerHTML = "one of the fields is empty!"
@@ -25,6 +24,8 @@ const signIn = (e) => {
             window.location.replace("../temps/dashboard.html")
             let token = message["token"]
             localStorage.setItem("token", token)
+            localStorage.setItem("email", postData.email)
+            
             
         }
     })

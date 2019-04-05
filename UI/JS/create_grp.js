@@ -1,6 +1,7 @@
 let users_tokenn = localStorage.getItem("token")
 const createGroup =(e)=>{
     e.preventDefault()
+    document.getElementById("my_groupz").style.display = 'none'
     let postData = {
         "group_name": document.getElementById("group_name").value
     }
@@ -24,5 +25,6 @@ const createGroup =(e)=>{
             document.getElementById("yes_group").innerHTML = "Created a group sucessfully!"
             window.location.reload()
         }
+        
     })
 }
